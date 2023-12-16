@@ -1,0 +1,35 @@
+.portfolio__title {
+    width: 970px;
+    color: $textHeading;
+}
+
+.portfolio__list {
+    width: 1170px;
+    flex-wrap: wrap;
+    column-gap: 30px;
+    row-gap: 50px;
+}
+.portfolio__item-wrraper {
+    position: relative;
+    &::before {
+        position: absolute;
+        left: -10px;
+        bottom: 0;
+        transform: translateX(-100%);
+        content: url('../../assets/img/portfolio/onion.svg');
+    }
+}
+.portfolio__item {
+    &:nth-child(1),
+    &:nth-child(4) {
+        width: 670px;
+    }
+    &:nth-child(2),
+    &:nth-child(3) {
+        width: 470px;
+    }
+}
+.portfolio__location {
+    padding-top: 29px;
+    color: $actionBlue;
+}

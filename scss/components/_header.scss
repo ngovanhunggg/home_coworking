@@ -1,0 +1,78 @@
+header {
+    position: fixed;
+    inset: 0;
+    bottom: unset;
+    z-index: 10;
+    background-color: $bgLightAlt;
+}
+
+button[class*='--active'] {
+    &::after {
+        position: absolute;
+        display: block;
+        content: '';
+        @include circle(10px);
+    }
+}
+
+.header {
+    margin-top: 16px;
+    width: 1170px;
+    height: 48px;
+}
+
+.header__nav {
+    padding: 0 126px 0 177px;
+    color: $textText;
+    gap: 30px;
+    will-change: hover;
+    transition: all 0.3s ease;
+}
+.header__nav-item--active {
+    position: relative;
+    color: $textHeading;
+    &::after {
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, -100%);
+        background-color: $actionGreen;
+    }
+}
+
+.header__nav .header__icon-item {
+    &:hover {
+        color: $textHeading;
+    }
+}
+
+.header__icon-item {
+    --btn-width: 24px;
+    --btn-height: 24px;
+
+    position: relative;
+    width: var(--btn-width);
+    height: var(--btn-height);
+
+    cursor: pointer;
+    img {
+        width: var(--btn-width);
+        height: var(--btn-height);
+    }
+    &:not(:last-child) {
+        margin-right: 20px;
+    }
+}
+.header__icon-item--active {
+    &::after {
+        right: 0;
+        top: 1px;
+        background-color: $actionRed;
+        border: 1px solid $bgWhite;
+    }
+}
+.header_btn-sign-up {
+    border: none;
+    outline: none;
+    background-color: $actionBlue;
+    color: $textText--white;
+}

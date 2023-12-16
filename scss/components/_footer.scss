@@ -1,0 +1,82 @@
+footer {
+    background-color: $bgGray;
+}
+.footer {
+    width: 1170px;
+}
+.footer__main {
+    gap: 30px;
+}
+.footer__logo p {
+    color: $textText--white;
+}
+.footer__topic {
+    width: 170px;
+}
+.footer__topic-name {
+    color: $textText--white;
+    position: relative;
+    top: 6px;
+}
+.footer__topic-list {
+    row-gap: 10px;
+}
+.footer__topic-link,
+.footer__topic-text {
+    color: $textText--gray;
+}
+.footer__topic-link {
+    text-transform: uppercase;
+    transition: hover 0.3s ease;
+    &:hover {
+        text-decoration: underline;
+        text-decoration-color: currentColor;
+    }
+}
+.footer__topic-text {
+    width: 370px;
+}
+
+.footer__topic-input {
+    width: 235px;
+    height: 48px;
+    padding: 11px 18px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    color: $textText;
+    caret-color: red;
+    spe &::placeholder {
+        color: $textText;
+        opacity: 0.7;
+    }
+}
+.footer__topic-btn {
+    color: #fff;
+    background-color: $actionBlue;
+    text-transform: uppercase;
+}
+.footer__sub {
+    padding-top: 27px;
+    padding-bottom: 27px;
+    border-top: 1px solid $textText;
+}
+
+.footer__sub-copyright {
+    color: $textText--gray;
+}
+
+.footer__sub-icon-item {
+    padding: 13px;
+    background-color: $actionBlue;
+    border-radius: 50%;
+
+    &:not(:last-child) {
+        margin-right: 15px;
+    }
+}
+
+.footer__sub-icon-item img {
+    width: 22px;
+    height: 22px;
+}

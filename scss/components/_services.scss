@@ -1,0 +1,83 @@
+.services {
+    height: 694.941px;
+    margin-top: 120px;
+}
+
+.services__title {
+    width: 970px;
+}
+.services__title .t-display-3 {
+    height: 101px;
+    padding: 0 70px;
+    color: $textHeading;
+}
+.services__title p {
+    color: $textText;
+}
+
+.services__card {
+    position: relative;
+    &::after {
+        position: absolute;
+        right: -10px;
+        bottom: 0;
+        transform: translateX(100%);
+        content: url('../../assets/img/services/onion.svg');
+    }
+}
+.services__card-list {
+    width: 1170px;
+    height: 330px;
+}
+.services__card-item {
+    @include shape(370px, 330px, 12px);
+    border: 1px solid $lineGray-line;
+    cursor: pointer;
+    // &:nth-child(2n + 1) {
+    //     border: 1px solid var(--lineGray-line, #e7e5ea);
+    // }
+    // &:nth-child(2n + 2) {
+    //     box-shadow: 0px 20px 50px 0px rgba(79, 119, 255, 0.2);
+    // }
+
+    &:hover {
+        border: none;
+        box-shadow: 0px 20px 50px 0px rgba(79, 119, 255, 0.2);
+    }
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
+}
+.services__card-item-icon {
+    margin-top: 42px;
+    @include circle(90px);
+    &:has([alt='office']) {
+        background-color: rgb(136, 108, 255, 0.2);
+    }
+    &:has([alt='desk1']) {
+        background-color: rgb(79 119 255 / 20%);
+    }
+    &:has([alt='desk2']) {
+        background-color: #ff951333;
+    }
+}
+.services__card-item-title {
+    width: 270px;
+    margin-top: 38px;
+}
+.services__card-item-title p {
+    &:first-child {
+        height: 23px;
+        color: $primaryColor-black;
+    }
+    &:last-child {
+        color: $textText;
+        font-family: 'DM Sans';
+    }
+}
+// button
+.services__btn {
+    background: $actionBlue;
+    color: #fff;
+    text-transform: uppercase;
+}

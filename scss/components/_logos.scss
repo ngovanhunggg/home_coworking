@@ -1,0 +1,10 @@
+.logos__title {
+    height: 35px;
+    color: #000;
+    font-feature-settings: 'clig' off, 'liga' off;
+}
+.logos__link {
+    &:not(:last-child) {
+        margin-right: 105px;
+    }
+}

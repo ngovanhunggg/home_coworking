@@ -1,0 +1,123 @@
+.pricing {
+    position: relative;
+    width: 100%;
+    &::after {
+        position: absolute;
+        inset: 0;
+        bottom: unset;
+        height: 793px;
+        background-color: $bgLightAlt;
+        content: '';
+        z-index: -1;
+    }
+}
+.pricing__title {
+    width: 870px;
+    padding-top: 120px;
+}
+.pricing__title-main {
+    color: $textHeading;
+}
+.pricing__title-sub {
+    color: $textText;
+}
+.pricing__content {
+    width: 1170px;
+}
+.pricing__content-tag {
+    min-width: 323px;
+    span {
+        width: fit-content;
+        color: $textText;
+    }
+}
+
+#pricing__toggle-input {
+    display: none;
+    &:checked + .pricing__toggle-label {
+        background-color: $actionGreen;
+        &::after {
+            background-color: $textText--gray;
+            transform: translateX(calc(62px - 100%));
+        }
+    }
+}
+.pricing__toggle-label {
+    position: relative;
+    display: block;
+    margin: 0 16px;
+    width: 72px;
+    min-width: 72px;
+    height: 33px;
+    background-color: $textText--gray;
+    border-radius: 20px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+
+    &::after {
+        display: block;
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        @include circle(23px);
+        background-color: $actionGreen;
+        content: '';
+        transition: all 0.3s ease-in-out;
+    }
+}
+
+.pricing__sale-text {
+    padding: 4px 12px;
+    border-radius: 5px;
+    color: #fff;
+    background-color: $actionGreen;
+}
+
+.pricing__tables-list {
+    position: relative;
+    gap: 30px;
+    &::after {
+        position: absolute;
+        right: -11px;
+        transform: translateX(100%);
+        content: url('../../assets/img/pricing/onion-yellow.svg');
+    }
+}
+.pricing__tables-item {
+    width: 570px;
+    border-radius: 10px;
+    border: 1px solid $lineGray-line;
+    background: #fff;
+}
+.pricing__tables-price {
+    width: 323px;
+    margin: 0 auto;
+}
+.pricing__tables-title {
+    color: $actionBlue;
+}
+.pricing__tables-cost {
+    color: $textHeading;
+}
+.pricing__tables-text {
+    color: #696871;
+    padding: 0 20px;
+}
+.pricing__tables-check-item {
+    &:not(:last-child) {
+        padding-bottom: 15px;
+    }
+}
+.pricing__tables-check-item p {
+    color: $textHeading;
+}
+
+.pricing__tables-btn {
+    width: 100%;
+    margin-top: 58px;
+    padding: 17px 0 19px 0;
+    text-transform: uppercase;
+    border-radius: 0 0 10px 10px;
+    color: #fff;
+    background-color: $actionBlue;
+}

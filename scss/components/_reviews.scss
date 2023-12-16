@@ -1,0 +1,46 @@
+.reviews {
+    padding-bottom: 120px;
+    background-color: $bgLightAlt;
+}
+.reviews__title-main {
+    color: $textHeading;
+}
+.reviews__title-sub {
+    color: $textText;
+}
+
+.reviews__cards-list {
+    position: relative;
+    max-width: 1170px;
+    margin: 0 auto;
+    &::before {
+        position: absolute;
+        top: 0;
+        left: -10px;
+        transform: translateX(-100%);
+        content: url('../../assets/img/reviews/onion-blue.svg');
+    }
+    column-gap: 30px;
+}
+
+.reviews__cards-user {
+    width: 370px;
+    padding: 35px 35px 45px;
+    border-radius: 20px;
+    background-color: #fff;
+}
+.reviews__cards-item-img {
+    @include circle(75px);
+    object-fit: cover;
+}
+.reviews__cards-item-name {
+    color: $textHeading;
+}
+.reviews__cards-item-position,
+.reviews__cards-item-text {
+    color: $textText;
+}
+.reviews__cards-item-text {
+    padding-top: 31px;
+    word-spacing: -0.2rem;
+}

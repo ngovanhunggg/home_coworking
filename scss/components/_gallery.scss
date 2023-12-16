@@ -1,0 +1,71 @@
+.gallery {
+    position: relative;
+    width: 1170px;
+    &::before {
+        position: absolute;
+        left: -10px;
+        top: 420px;
+        transform: translateX(-100%);
+        content: url('../../assets/img/gallery/union-left.svg');
+    }
+}
+
+.gallery__left {
+    width: 670px;
+}
+.gallery__left img {
+    border-radius: 20px;
+}
+.gallery__left-content > p {
+    width: 580px;
+    height: 48px;
+    color: $textText;
+    font-family: 'DM Sans';
+}
+.gallery__left-address {
+    height: 23px;
+    width: 434px;
+    flex-shrink: 0;
+    color: $textHeading;
+}
+.gallery__left-price {
+    height: 23px;
+    text-align: end;
+    width: 153px;
+    color: $textText;
+}
+
+// gallery right
+.gallery__right {
+    padding-left: 130px;
+}
+.gallery__right-title {
+    padding-top: 62px;
+    color: $textHeading;
+}
+.gallery__right-text {
+    color: $black-200;
+}
+.gallery__right-link {
+    display: inline-block;
+    color: $actionPurple;
+    text-transform: uppercase;
+}
+.gallery__right-link img {
+    margin-left: 10px;
+}
+.gallery__right-arrows {
+    width: 127px;
+    height: 56px;
+    padding-top: 98px;
+}
+
+.gallery__right-arrows-item {
+    @include circle(56px);
+    cursor: pointer;
+    box-shadow: 0px 20px 50px 0 rgba(79, 119, 255, 0.2);
+}
+.gallery__right-arrows-item--disable {
+    border: 1px solid $lineGray-line;
+    box-shadow: none;
+}
