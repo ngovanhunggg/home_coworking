@@ -1,6 +1,5 @@
 .pricing {
     position: relative;
-    width: 100%;
     &::after {
         position: absolute;
         inset: 0;
@@ -11,21 +10,43 @@
         z-index: -1;
     }
 }
+.pricing__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .pricing__title {
-    width: 870px;
     padding-top: 120px;
 }
 .pricing__title-main {
     color: $textHeading;
+    font-weight: 500;
+    font-size: 4.8rem;
+    line-height: 1.1666666667;
+    letter-spacing: -0.2rem;
 }
 .pricing__title-sub {
     color: $textText;
+    font-weight: 400;
+    font-size: 2.2rem;
+    line-height: 1.4545454545;
+    letter-spacing: -0.1rem;
 }
+
 .pricing__content {
-    width: 1170px;
+    width: 100%;
 }
+
 .pricing__content-tag {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     min-width: 323px;
+    font-weight: 400;
+    font-size: 1.8rem;
+    font-family: 'DM Sans';
+    line-height: 1.5555555556;
+    letter-spacing: -0.03rem;
     span {
         width: fit-content;
         color: $textText;
@@ -73,51 +94,67 @@
     background-color: $actionGreen;
 }
 
-.pricing__tables-list {
+.pricing__row {
     position: relative;
-    gap: 30px;
     &::after {
         position: absolute;
-        right: -11px;
+        top: 15px;
+        right: 4px;
         transform: translateX(100%);
         content: url('../../assets/img/pricing/onion-yellow.svg');
     }
 }
 .pricing__tables-item {
-    width: 570px;
     border-radius: 10px;
     border: 1px solid $lineGray-line;
     background: #fff;
 }
-.pricing__tables-price {
-    width: 323px;
-    margin: 0 auto;
-}
+
 .pricing__tables-title {
     color: $actionBlue;
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 1.5555555556;
+    letter-spacing: 0.04rem;
 }
 .pricing__tables-cost {
     color: $textHeading;
+    font-weight: 500;
+    font-size: 3.6rem;
+    line-height: 1.2777777778;
+    letter-spacing: -0.1rem;
+    span {
+        font-weight: 500;
+        font-size: 6.4rem;
+        line-height: 1.125;
+        letter-spacing: -0.2rem;
+    }
 }
 .pricing__tables-text {
     color: #696871;
-    padding: 0 20px;
+    padding: 10px 135px 0;
+    font-weight: 400;
+    font-size: 1.6rem;
+    font-family: 'DM Sans';
+    line-height: 1.625;
 }
 .pricing__tables-check-item {
     &:not(:last-child) {
         padding-bottom: 15px;
     }
 }
-.pricing__tables-check-item p {
+.pricing__tables-check-text {
     color: $textHeading;
+    padding-left: 14px;
+    font-size: 2.2rem;
+    font-weight: 400;
+    line-height: 1.45455;
+    letter-spacing: -1px;
 }
 
 .pricing__tables-btn {
     width: 100%;
     margin-top: 58px;
     padding: 17px 0 19px 0;
-    text-transform: uppercase;
     border-radius: 0 0 10px 10px;
-    color: #fff;
-    background-color: $actionBlue;
 }

@@ -1,10 +1,20 @@
 .logos__title {
-    height: 35px;
     color: #000;
+    font-weight: 500;
+    font-size: 3.6rem;
+    line-height: 1.2777777778;
+    letter-spacing: -0.1rem;
     font-feature-settings: 'clig' off, 'liga' off;
 }
-.logos__link {
+.logos__list {
+    list-style-type: none;
+}
+
+.logos__item {
     &:not(:last-child) {
-        margin-right: 105px;
+        padding-right: 105px;
     }
+}
+.logos__link {
+    display: block;
 }

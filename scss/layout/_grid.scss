@@ -1,6 +1,23 @@
+:root {
+    --grid: 12;
+    --gird-container-width: 1200px;
+    --grid-container-gap: 15px;
+    --grid-col-gap: 30px;
+}
 .container {
-    width: 1300px;
+    max-width: var(--gird-container-width);
     margin: auto;
+    padding: 0 var(--grid-container-gap);
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 calc(var(--grid-col-gap) / -2);
+}
+
+.col {
+    width: calc(var(--col-xs) / var(--grid) * 100%);
+    padding: calc(var(--grid-col-gap) / 2) calc(var(--grid-col-gap) / 2);
 }
 
 .d-flex {

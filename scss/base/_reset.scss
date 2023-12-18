@@ -4,29 +4,23 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: #{$fontPrimary};
 }
 html,
-body,
-* {
-    font-family: #{$fontPrimary};
+body {
     font-weight: 400;
     font-size: 62.5%;
 }
 body {
     width: 1920px;
 }
+
 button {
     border: none;
     outline: none;
-    color: inherit;
-    background-color: transparent;
     cursor: pointer;
 }
-span {
-    font-size: inherit;
-    font-family: inherit;
-    font-weight: inherit;
-}
+
 a {
     text-decoration: none;
 }

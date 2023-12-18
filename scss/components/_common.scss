@@ -1,12 +1,61 @@
-.logo {
-    width: 176px;
-    height: 44px;
+// Typography
+@mixin typography($type, $fw: null, $fs: null, $lh: null, $ls: null, $font: 'Outfit') {
+    #{$type} {
+        @if ($fw) {
+            font-weight: $fw;
+        }
+        @if ($fs) {
+            font-size: $fs;
+        }
+        font-family: $font;
+        @if ($lh) {
+            line-height: $lh;
+        }
+        @if ($ls) {
+            letter-spacing: $ls;
+        }
+    }
 }
-.logo p {
-    width: 134px;
-    height: 34px;
-    font-size: 2.4rem;
-    line-height: calc(3.2 / 2.4);
-    letter-spacing: -0.004rem;
-    color: $textHeading;
+@mixin displayType($type, $fs: null, $lh: null) {
+    @include typography($type, 500, $fs, $lh, -0.2rem);
+}
+@mixin headline($headline, $fs: null, $lh: null, $ls: null) {
+    @include typography($headline, 500, $fs, $lh, $ls);
+}
+@mixin paragraph($p, $fs: null, $lh: null, $ls: null) {
+    @include typography($p, 400, $fs, $lh, $ls, 'DM Sans');
+}
+@mixin link($selector, $fs) {
+    @include typography($selector, 500, #{$fs}rem, calc(2.4 / $fs), -0.03rem);
+}
+
+// Shape
+@mixin shape($w: null, $h: null, $r) {
+    @if ($w) {
+        width: $w;
+        min-width: $w;
+    }
+    @if ($h) {
+        height: $h;
+        min-height: $h;
+    }
+    border-radius: $r;
+}
+
+@mixin circle($width) {
+    @include shape($width, $width, 50%);
+}
+
+// Button
+@mixin button($selector, $w: null, $h: null, $py: null, $px: null, $r) {
+    #{$selector} {
+        @include shape($w, $h, $r);
+        @if ($px and $py) {
+            padding: $py $px;
+        } @else if($py) {
+            padding: $py 0;
+        } @else if($px) {
+            padding: 0 $px;
+        }
+    }
 }

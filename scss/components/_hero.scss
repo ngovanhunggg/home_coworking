@@ -1,60 +1,6 @@
 .hero {
-    max-width: 1920px;
     height: 950px;
     background-color: $bgLightAlt;
-}
-
-.hero__content {
-    position: absolute;
-    top: 200px;
-    left: 575px;
-    width: 770px;
-    height: 356.941px;
-}
-.hero__content > p {
-    width: 669.302px;
-    height: 47.95px;
-    margin-top: 39px;
-    padding: 0 54px;
-    color: $textText;
-    font-family: 'DM Sans';
-    font-feature-settings: 'clig' off, 'liga' off;
-}
-.hero__title {
-    width: 770px;
-    height: 144px;
-    color: $textHeading;
-    font-feature-settings: 'clig' off, 'liga' off;
-}
-
-.hero__btn {
-    align-items: center;
-}
-.hero__btn-book {
-    background-color: $actionBlue;
-    width: 140px;
-    min-width: 140px;
-    color: #fff;
-}
-.hero__btn-play {
-    width: 169px;
-    height: 52px;
-}
-.hero__btn-play p {
-    width: 110px;
-    height: 20px;
-    color: $textHeading;
-    text-transform: uppercase;
-}
-.hero__btn-play-icon {
-    cursor: pointer;
-    @include circle(52px);
-    background-color: #fff;
-    filter: drop-shadow(0px 5px 20px rgba(18, 2, 47, 0.15));
-}
-.hero__btn-play-icon img {
-    width: 20px;
-    height: 20px;
 }
 .hero__img {
     position: absolute;
@@ -64,7 +10,59 @@
     width: fit-content;
 }
 .hero__img img {
-    width: 1528px;
-    min-width: 1528px;
-    height: 551px;
+    width: 100%;
+}
+
+.hero__content {
+    position: absolute;
+    top: 200px;
+    left: 575px;
+    width: calc(770 / 1920 * 100%);
+}
+.hero__text {
+    padding: 38px 115px 70px;
+    color: $textText;
+    font-weight: 400;
+    font-size: 1.8rem;
+    font-family: 'DM Sans';
+    line-height: 1.5555555556;
+    letter-spacing: -0.03rem;
+    font-feature-settings: 'clig' off, 'liga' off;
+}
+.hero__title {
+    color: $textHeading;
+    font-weight: 500;
+    font-size: 7.2rem;
+    line-height: 1.0833333333;
+    letter-spacing: -0.2rem;
+    font-feature-settings: 'clig' off, 'liga' off;
+}
+
+.hero__btn {
+    display: flex;
+    align-items: center;
+}
+.hero__btn-book {
+    padding: 16px 32px;
+}
+.hero__btn-play-link {
+    padding-left: 7px;
+    color: $textHeading;
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.6; /* 160% */
+    letter-spacing: -0.03rem;
+    text-transform: uppercase;
+}
+.hero__btn-play-icon {
+    cursor: pointer;
+    @include circle(52px);
+    background-color: #fff;
+    &:hover {
+        filter: drop-shadow(0px 5px 20px rgba(18, 2, 47, 0.15));
+    }
+}
+.hero__btn-play-icon img {
+    width: 20px;
+    height: 20px;
 }

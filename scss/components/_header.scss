@@ -6,7 +6,7 @@ header {
     background-color: $bgLightAlt;
 }
 
-button[class*='--active'] {
+header [class*='--active'] {
     &::after {
         position: absolute;
         display: block;
@@ -17,18 +17,34 @@ button[class*='--active'] {
 
 .header {
     margin-top: 16px;
-    width: 1170px;
-    height: 48px;
 }
 
 .header__nav {
-    padding: 0 126px 0 177px;
+    list-style-type: none;
     color: $textText;
-    gap: 30px;
     will-change: hover;
     transition: all 0.3s ease;
 }
-.header__nav-item--active {
+.header__nav-item {
+    display: inline-block;
+    &:not(:last-child) {
+        padding-right: 30px;
+    }
+}
+.header__nav-link {
+    color: $textText;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.6;
+    letter-spacing: -0.03rem;
+    text-transform: uppercase;
+
+    &:hover {
+        color: $textHeading;
+    }
+}
+.header__nav-link--active {
     position: relative;
     color: $textHeading;
     &::after {
@@ -39,13 +55,7 @@ button[class*='--active'] {
     }
 }
 
-.header__nav .header__icon-item {
-    &:hover {
-        color: $textHeading;
-    }
-}
-
-.header__icon-item {
+.header__btn-icon {
     --btn-width: 24px;
     --btn-height: 24px;
 
@@ -58,11 +68,11 @@ button[class*='--active'] {
         width: var(--btn-width);
         height: var(--btn-height);
     }
-    &:not(:last-child) {
+    &:has([alt='search']) {
         margin-right: 20px;
     }
 }
-.header__icon-item--active {
+.header__btn-icon--active {
     &::after {
         right: 0;
         top: 1px;
@@ -70,9 +80,7 @@ button[class*='--active'] {
         border: 1px solid $bgWhite;
     }
 }
-.header_btn-sign-up {
-    border: none;
-    outline: none;
-    background-color: $actionBlue;
-    color: $textText--white;
+.header__btn-sign-up {
+    padding: 12px 39px;
+    margin-left: 30px;
 }

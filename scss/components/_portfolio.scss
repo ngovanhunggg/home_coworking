@@ -1,35 +1,30 @@
 .portfolio__title {
-    width: 970px;
+    width: calc(970 / 1170 * 100%);
+    margin: 0 auto;
     color: $textHeading;
+    font-weight: 500;
+    font-size: 4.2rem;
+    line-height: 1.1904761905;
+    letter-spacing: -0.084rem;
 }
 
-.portfolio__list {
-    width: 1170px;
-    flex-wrap: wrap;
-    column-gap: 30px;
-    row-gap: 50px;
-}
-.portfolio__item-wrraper {
-    position: relative;
-    &::before {
-        position: absolute;
-        left: -10px;
-        bottom: 0;
-        transform: translateX(-100%);
-        content: url('../../assets/img/portfolio/onion.svg');
-    }
-}
-.portfolio__item {
-    &:nth-child(1),
-    &:nth-child(4) {
-        width: 670px;
-    }
-    &:nth-child(2),
-    &:nth-child(3) {
-        width: 470px;
+.portfolio__row {
+    &:first-child {
+        position: relative;
+        &::before {
+            position: absolute;
+            left: 5px;
+            top: calc(490px + 15px);
+            transform: translateX(-100%);
+            content: url('../../assets/img/portfolio/onion.svg');
+        }
     }
 }
 .portfolio__location {
     padding-top: 29px;
     color: $actionBlue;
+    font-weight: 500;
+    font-size: 2.2rem;
+    line-height: 1.4545454545;
+    letter-spacing: -0.1rem;
 }

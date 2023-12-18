@@ -1,18 +1,29 @@
 .services {
-    height: 694.941px;
-    margin-top: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 120px;
 }
 
 .services__title {
-    width: 970px;
+    // width: calc(970 / 1170 * 100%);
+    padding: 0 180px;
 }
-.services__title .t-display-3 {
-    height: 101px;
-    padding: 0 70px;
+.services__title-main {
     color: $textHeading;
+    font-size: 4.8rem;
+    font-weight: 500;
+    line-height: 1.16667;
+    letter-spacing: -0.2rem;
 }
-.services__title p {
+
+.services__title-sub {
     color: $textText;
+    font-family: DM Sans;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.55556; /* 155.556% */
+    letter-spacing: -0.03rem;
 }
 
 .services__card {
@@ -20,37 +31,29 @@
     &::after {
         position: absolute;
         right: -10px;
-        bottom: 0;
+        bottom: 15px;
         transform: translateX(100%);
         content: url('../../assets/img/services/onion.svg');
     }
 }
-.services__card-list {
-    width: 1170px;
-    height: 330px;
-}
+
 .services__card-item {
-    @include shape(370px, 330px, 12px);
+    max-width: 370px;
+    max-height: 330px;
+    padding: 41px 55px 64px 45px;
+    border-radius: 12px;
     border: 1px solid $lineGray-line;
     cursor: pointer;
-    // &:nth-child(2n + 1) {
-    //     border: 1px solid var(--lineGray-line, #e7e5ea);
-    // }
-    // &:nth-child(2n + 2) {
-    //     box-shadow: 0px 20px 50px 0px rgba(79, 119, 255, 0.2);
-    // }
 
     &:hover {
         border: none;
         box-shadow: 0px 20px 50px 0px rgba(79, 119, 255, 0.2);
     }
-    &:not(:last-child) {
-        margin-right: 30px;
-    }
 }
 .services__card-item-icon {
-    margin-top: 42px;
-    @include circle(90px);
+    // @include circle(90px);
+    padding: 20px;
+    border-radius: 50%;
     &:has([alt='office']) {
         background-color: rgb(136, 108, 255, 0.2);
     }
@@ -61,23 +64,25 @@
         background-color: #ff951333;
     }
 }
-.services__card-item-title {
-    width: 270px;
-    margin-top: 38px;
+.services__card-title {
+    padding-top: 38px;
 }
-.services__card-item-title p {
-    &:first-child {
-        height: 23px;
-        color: $primaryColor-black;
-    }
-    &:last-child {
-        color: $textText;
-        font-family: 'DM Sans';
-    }
+
+.services__card-title-main {
+    color: $primaryColor-black;
+    font-weight: 500;
+    font-size: 2.2rem;
+    line-height: 1.4545454545;
+    letter-spacing: -0.1rem;
+}
+.services__card-title-sub {
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.625;
+    color: $textText;
+    font-family: 'DM Sans';
 }
 // button
 .services__btn {
-    background: $actionBlue;
-    color: #fff;
-    text-transform: uppercase;
+    padding: 16px 32px;
 }

@@ -1,16 +1,29 @@
 .about {
-    position: relative;
-    width: 1920px;
     height: 1172px;
-    flex-shrink: 0;
     background-color: $bgLightAlt;
 }
-.about__title {
-    padding-top: 110px;
-    width: 870px;
+.about__content {
+    position: relative;
 }
-.about__title--sub {
+.about__title {
+    margin: auto;
+    padding-top: 110px;
+    width: calc(870 / 1170 * 100%);
+}
+.about__title-text {
+    color: $textHeading;
+    font-weight: 500;
+    font-size: 4.8rem;
+    line-height: 1.1666666667;
+    letter-spacing: -0.2rem;
+}
+.about__title-sub {
     color: $textText;
+    font-weight: 400;
+    font-size: 1.8rem;
+    font-family: 'DM Sans';
+    line-height: 1.5555555556;
+    letter-spacing: -0.03rem;
 }
 
 .about__img-list {
@@ -18,10 +31,8 @@
     width: 870px;
     height: 650px;
     top: 402px;
-    left: 674px;
-    right: 376px;
+    right: 15px;
     bottom: 120px;
-    flex-shrink: 0;
 }
 .about__img-list * {
     position: absolute;
@@ -53,28 +64,45 @@
 .about__box {
     position: absolute;
     top: 352px;
-    left: 375px;
-    width: 570px;
+    left: 15px;
+    width: calc(570 / 1200 * 100%);
     border-radius: 20px;
     background-color: #fff;
     box-shadow: $bigShadow;
 }
 .about__box-content {
-    width: 380px;
-    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding: 60px 100px 40px;
 }
 .about__box-subtitle {
     color: $actionBlue;
 }
+.about__box-subtitle,
+.about__box-text {
+    font-weight: 400;
+    font-size: 1.8rem;
+    font-family: 'DM Sans';
+    line-height: 1.5555555556;
+    letter-spacing: -0.03rem;
+}
 .about__box-maintitle {
     color: $textHeading;
+    font-weight: 500;
+    font-size: 3.6rem;
+    line-height: 1.2777777778;
+    letter-spacing: -0.1rem;
 }
-.about__box-maintitle + p,
+.about__box-text,
 .about__box-btn {
     color: $textText;
 }
 
 .about__box-btn {
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 1.7142857143;
+    letter-spacing: -0.03rem;
     text-transform: uppercase;
 }
 .about__box-indicator {

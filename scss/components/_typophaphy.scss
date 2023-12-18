@@ -1,4 +1,4 @@
-@import './comon';
+@import './common';
 // Type: Display
 @include displayType('.t-display-1', 7.2rem, calc(7.8 / 7.2));
 @include displayType('.t-display-2', 6.4rem, calc(7.2 / 6.4));

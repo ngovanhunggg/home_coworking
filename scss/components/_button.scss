@@ -1,5 +1,20 @@
-@import './comon';
+@import './common';
 
-@include button('.btn', 155px, 56px, 13px, 24px, 5px);
-@include button('.btn-small', 129px, 48px, 13px, 24px, 5px);
-@include button('.btn-p18-32', auto, 56px, 18px, 32px, 5px);
+// @include button('.btn', 155px, 56px, 13px, 24px, 5px);
+// @include button('.btn-small', 129px, 48px, 13px, 24px, 5px);
+// @include button('.btn-p18-32', auto, 56px, 18px, 32px, 5px);
+
+.btn {
+    border-radius: 5px;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.6;
+    letter-spacing: -0.03rem;
+    text-transform: uppercase;
+    background-color: $actionBlue;
+}
+.btn-small {
+    font-size: 1.4rem;
+    line-height: 1.71429;
+}
