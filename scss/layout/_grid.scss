@@ -16,7 +16,7 @@
 }
 
 .col {
-    width: calc(var(--col-xs) / var(--grid) * 100%);
+    width: calc(var(--col-lg) / var(--grid) * 100%);
     padding: calc(var(--grid-col-gap) / 2) calc(var(--grid-col-gap) / 2);
 }
 

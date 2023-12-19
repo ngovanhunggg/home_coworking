@@ -42,7 +42,7 @@ a {
 }
 
 .col {
-  width: calc(var(--col-xs) / var(--grid) * 100%);
+  width: calc(var(--col-lg) / var(--grid) * 100%);
   padding: calc(var(--grid-col-gap) / 2) calc(var(--grid-col-gap) / 2);
 }
 
@@ -1507,7 +1507,7 @@ header [class*="--active"]::after {
   color: #7b88a8;
   font-weight: 400;
   font-size: 1.8rem;
-  font-family: "DM Sans";
+  font-family: "DM Sans" 7;
   line-height: 1.5555555556;
   letter-spacing: -0.03rem;
   font-feature-settings: "clig" off, "liga" off;
