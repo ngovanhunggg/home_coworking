@@ -12,10 +12,6 @@ body {
   font-size: 62.5%;
 }
 
-body {
-  width: 1920px;
-}
-
 button {
   border: none;
   outline: none;
@@ -1483,7 +1479,7 @@ header [class*="--active"]::after {
 }
 
 .hero {
-  height: 950px;
+  min-height: 950px;
   background-color: #f7f5f1;
 }
 
@@ -1501,14 +1497,13 @@ header [class*="--active"]::after {
 }
 
 .hero__content {
-  position: absolute;
-  top: 200px;
-  left: 575px;
-  width: 40.1041666667%;
+  padding-top: 148px;
+  margin: 0 auto;
 }
 
 .hero__text {
-  padding: 38px 115px 70px;
+  padding: 38px 0 70px;
+  width: 45%;
   color: #7b88a8;
   font-weight: 400;
   font-size: 1.8rem;
@@ -1519,6 +1514,7 @@ header [class*="--active"]::after {
 }
 
 .hero__title {
+  width: 60%;
   color: #2d3958;
   font-weight: 500;
   font-size: 7.2rem;
@@ -2033,10 +2029,6 @@ header [class*="--active"]::after {
   font-size: 2.2rem;
   line-height: 1.4545454545;
   letter-spacing: -0.1rem;
-}
-
-.pricing__content {
-  width: 100%;
 }
 
 .pricing__content-tag {

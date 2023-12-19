@@ -1,5 +1,5 @@
 .hero {
-    height: 950px;
+    min-height: 950px;
     background-color: $bgLightAlt;
 }
 .hero__img {
@@ -14,13 +14,16 @@
 }
 
 .hero__content {
-    position: absolute;
-    top: 200px;
-    left: 575px;
-    width: calc(770 / 1920 * 100%);
+    padding-top: 148px;
+    margin: 0 auto;
+    // position: absolute;
+    // top: 200px;
+    // left: 575px;
+    // width: calc(770 / 1920 * 100%);
 }
 .hero__text {
-    padding: 38px 115px 70px;
+    padding: 38px 0 70px;
+    width: 45%;
     color: $textText;
     font-weight: 400;
     font-size: 1.8rem;
@@ -30,6 +33,7 @@
     font-feature-settings: 'clig' off, 'liga' off;
 }
 .hero__title {
+    width: 60%;
     color: $textHeading;
     font-weight: 500;
     font-size: 7.2rem;
