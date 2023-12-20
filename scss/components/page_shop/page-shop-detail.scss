@@ -1,0 +1,18 @@
+// Abstracts
+@import '../../abstracts/variables';
+// Base
+@import '../../base/reset';
+// Layout
+@import '../../layout/grid.scss';
+// Utils
+@import '../../utils/utils.scss';
+
+// Components
+@import '../../components/typophaphy';
+@import '../../components/button';
+
+@import 'header';
+@import 'hero';
+@import './page-shope-detail/product-detail';
+@import 'cta-shop';
+@import 'footer';

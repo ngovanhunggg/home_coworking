@@ -1,0 +1,176 @@
+.sidebar__wrapper {
+    margin-right: 3.5rem;
+    &:not(:last-child) {
+        padding-bottom: 50px;
+    }
+}
+.sidebar__title {
+    display: flex;
+    justify-content: space-between;
+    user-select: none;
+    padding-bottom: 2.5rem;
+    border-bottom: 1px solid $lineGray-line;
+    cursor: pointer;
+}
+.sidebar__icon {
+    width: 24px;
+    height: 24px;
+}
+.sidebar__icon--down {
+    transform: rotate(180deg);
+}
+.sidebar__title-name {
+    color: $textHeading;
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 1.55556; /* 155.556% */
+    letter-spacing: 0.04rem;
+}
+
+.sidebar__list {
+    padding-top: 20px;
+}
+
+.sidebar__label {
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+
+    &:has(.sidebar__label-wrapper) {
+        .sidebar__label-wrapper {
+            &::before {
+                position: relative;
+                top: -1px;
+            }
+        }
+    }
+}
+.sidebar__label-wrapper {
+    $textHeading: #333;
+    display: flex;
+    align-items: center;
+    color: $textHeading;
+    font-family: DM Sans;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 171.429%; /*  */
+    letter-spacing: -0.03rem;
+    &::before {
+        margin-right: 10px;
+        width: 15px;
+        height: 15px;
+        background-color: $textText--gray;
+        content: '';
+        transition: all 0.3s ease;
+    }
+    &:has(.sidebar__input:checked) {
+        position: relative;
+
+        &::before {
+            background-color: #000;
+        }
+        &::after {
+            position: absolute;
+            top: 2px;
+            left: 1px;
+            content: url('../../../assets/img/sidebar/icon-check.svg');
+        }
+    }
+}
+.sidebar__input {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    display: none;
+}
+
+.sidebar__list-item {
+    list-style-type: none;
+}
+.sidebar__list--collapse .sidebar__list-item {
+    padding-left: 25px;
+}
+.sidebar__item {
+    padding-top: 15px;
+}
+
+.sidebar__item .sidebar__label-wrapper {
+    color: $textText;
+    cursor: pointer;
+}
+
+.sidebar__pricing {
+    position: relative;
+    margin-top: 36px;
+}
+.sidebar__progess,
+.sidebar__baret {
+    height: 2px;
+    cursor: pointer;
+}
+.sidebar__progess {
+    background-color: #e7e5ea;
+}
+.sidebar__baret {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: calc((2999 - 149) / 2999 * 100%);
+    background-color: #4f77ff;
+    &::before,
+    &::after {
+        content: '';
+        position: absolute;
+        top: 1px;
+        transform: translateY(-50%);
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: #4f77ff;
+    }
+    &::before {
+        left: 0;
+    }
+    &::after {
+        right: 0;
+    }
+}
+.sidebar__cost,
+.sidebar__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.sidebar__cost {
+    padding-top: 5px;
+}
+.sidebar__cost-start,
+.sidebar__cost-end,
+.sidebar__info-cost,
+.sidebar__btn-filter {
+    font-size: 1.4rem;
+    line-height: 171.429%; /*  */
+    letter-spacing: -0.03rem;
+}
+
+.sidebar__cost-start,
+.sidebar__cost-end {
+    color: $textHeading;
+    font-weight: 400;
+}
+.sidebar__info {
+    padding-top: 20px;
+}
+.sidebar__info-cost,
+.sidebar__btn-filter {
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.sidebar__info-cost {
+    color: $textText;
+}
+.sidebar__btn-filter {
+    background: transparent;
+    color: $actionBlue;
+    padding: 4px;
+}

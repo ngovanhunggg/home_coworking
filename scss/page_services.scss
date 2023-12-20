@@ -1,0 +1,25 @@
+// Abstracts
+@import './abstracts/variables';
+// Base
+@import './base/reset';
+// Layout
+@import './layout/grid.scss';
+// Utils
+@import './utils/utils.scss';
+
+// Components
+@import './components/typophaphy';
+@import './components/button';
+
+@import './components/header';
+@import './components/hero';
+@import './components/_services';
+@import './components/logos';
+@import './components/items';
+@import './components/gallery';
+@import './components/about';
+@import './components/portfolio';
+@import './components/pricing';
+@import './components/cta';
+@import './components/reviews';
+@import './components/footer';

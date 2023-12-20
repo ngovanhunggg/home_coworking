@@ -1,0 +1,63 @@
+.product__img-bg,
+.product__slider-item {
+    width: 100%;
+    border-radius: 5px;
+    object-fit: cover;
+}
+.product__img {
+    position: relative;
+    &::before {
+        position: absolute;
+        top: 17px;
+        right: 20px;
+        width: 24px;
+        height: 24px;
+        content: url('/assets/img/products/icon-zoom-in.svg');
+        cursor: pointer;
+    }
+}
+
+// content
+
+.product__content {
+    padding-left: 100px;
+}
+
+.product__title {
+}
+
+.product__title-main {
+}
+
+.product__title-sub {
+}
+
+.product__text {
+}
+
+.product__text-more {
+}
+
+.product__color-list {
+}
+
+.product__color-item {
+}
+
+.product__quantity {
+}
+
+.product__numbers {
+}
+
+.product__add-btn {
+}
+
+.product__socials {
+}
+
+.product__info {
+}
+
+.product__info-text {
+}

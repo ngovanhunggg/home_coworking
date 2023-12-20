@@ -1,0 +1,30 @@
+.cta {
+    min-height: 500px;
+    background: url('../../../assets/img/cta/bg-cta-shop.jpg') no-repeat right bottom;
+}
+.cta__title {
+    padding-bottom: 77px;
+}
+.cta__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.cta__title {
+    width: calc(970 / 1170 * 100%);
+}
+.cta__title-main {
+    font-size: 4.8rem;
+    font-weight: 500;
+    line-height: 116.667%; /* 116.667% */
+    letter-spacing: -0.2rem;
+}
+.cta__title-sub {
+    font-size: 2.2rem;
+    font-weight: 400;
+    line-height: 145.455%; /* 145.455% */
+    letter-spacing: -0.1rem;
+}
+.cta-btn {
+    padding: 16px 32px;
+}

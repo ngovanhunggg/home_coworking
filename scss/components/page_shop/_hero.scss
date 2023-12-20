@@ -1,0 +1,33 @@
+header {
+    position: relative;
+    min-height: 500px;
+    background-color: transparent;
+    background: url('../../../assets/img/bg/bg-gradient.jpg') no-repeat center / cover;
+}
+.hero {
+    position: absolute;
+    max-width: 870px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.hero__title {
+    color: $textHeading;
+    font-size: 4.8rem;
+    font-weight: 500;
+    line-height: 1.16667; /* 116.667% */
+    letter-spacing: -2px;
+}
+.hero__text {
+    color: $textHeading;
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.6; /* 160% */
+    letter-spacing: -0.3px;
+    text-transform: uppercase;
+}
+.hero__text--makedown {
+    span {
+        color: $textText;
+    }
+}

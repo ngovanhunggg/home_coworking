@@ -6,8 +6,8 @@
 }
 
 .services__title {
-    // width: calc(970 / 1170 * 100%);
-    padding: 0 180px;
+    width: calc(970 / 1170 * 100%);
+    // padding: 0 180px;
 }
 .services__title-main {
     color: $textHeading;
@@ -38,19 +38,18 @@
 }
 
 .services__card-item {
-    max-width: 370px;
-    max-height: 330px;
+    min-height: 100%;
     padding: 41px 55px 64px 45px;
     border-radius: 12px;
     border: 1px solid $lineGray-line;
     cursor: pointer;
-
+    transition: all 0.2s ease-in;
     &:hover {
-        border: none;
+        // border: none;
         box-shadow: 0px 20px 50px 0px rgba(79, 119, 255, 0.2);
     }
 }
-.services__card-item-icon {
+.services__card-icon {
     // @include circle(90px);
     padding: 20px;
     border-radius: 50%;

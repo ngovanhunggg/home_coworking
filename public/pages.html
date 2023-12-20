@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Page</title>
+        <link rel="stylesheet" href="../assets/css/page-shop.css" />
+    </head>
+    <body>
+        <header>
+            <!-- Header -->
+            <div class="container header between-center">
+                <a href="./index.html" class="header__logo">
+                    <img srcset="../assets/img/Logo.png 2x" alt="logo" />
+                </a>
+                <ul class="header__nav">
+                    <li class="header__nav-item">
+                        <a href="/public/index.html" class="header__nav-link"> HOME </a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="/public/services.html" class="header__nav-link">SERVICES</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="/public/about.html" class="header__nav-link">ABOUT</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a
+                            href="/public/pages.html"
+                            class="header__nav-link header__nav-link--active"
+                            >PAGES</a
+                        >
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="/public/blog.html" class="header__nav-link">BLOG</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="/public/contact.html" class="header__nav-link">CONTACT</a>
+                    </li>
+                </ul>
+                <div class="header__btn align-center">
+                    <button class="header__btn-icon">
+                        <img src="../assets/img/header/Search.png" alt="search" />
+                    </button>
+                    <button class="header__btn-icon header__btn-icon--active">
+                        <img src="../assets/img/header/Bag-2.png" alt="bag" />
+                    </button>
+                    <button class="header__btn-sign-up btn btn-small">SIGN UP</button>
+                </div>
+            </div>
+            <!-- Hero -->
+            <div class="hero t-center">
+                <h1 class="hero__title">Our Shop</h1>
+                <div class="hero__text hero__text--makedown pt-30">
+                    Home page <span>/ shop</span>
+                </div>
+            </div>
+        </header>
+        <div class="container">
+            <div class="row container__wrapper">
+                <!-- Sidebar -->
+                <div class="col" style="--col-lg: 3">
+                    <div class="sidebar">
+                        <!-- Category -->
+                        <div class="sidebar__wrapper">
+                            <div class="sidebar__title">
+                                <h3 class="sidebar__title-name">Category</h3>
+                                <img
+                                    src="../assets/img/sidebar/arrow-collapse.svg"
+                                    class="sidebar__icon"
+                                />
+                            </div>
+                            <div class="sidebar__collapse">
+                                <div class="sidebar__list sidebar__list--collapse">
+                                    <label class="sidebar__label">
+                                        <div class="sidebar__label-wrapper">
+                                            <input
+                                                type="checkbox"
+                                                name=""
+                                                id="app"
+                                                class="sidebar__input"
+                                            />
+                                            App
+                                        </div>
+                                        <img
+                                            src="../assets/img/sidebar/arrow-collapse.svg"
+                                            class="sidebar__icon sidebar__icon--down"
+                                        />
+                                    </label>
+                                </div>
+                                <div class="sidebar__list sidebar__list--collapse">
+                                    <label class="sidebar__label">
+                                        <div class="sidebar__label-wrapper">
+                                            <input
+                                                type="checkbox"
+                                                name=""
+                                                id="audio"
+                                                class="sidebar__input"
+                                            />
+                                            Audio
+                                        </div>
+                                        <img
+                                            src="../assets/img/sidebar/arrow-collapse.svg"
+                                            class="sidebar__icon sidebar__icon--down"
+                                        />
+                                    </label>
+                                </div>
+                                <div class="sidebar__list sidebar__list--collapse">
+                                    <label class="sidebar__label">
+                                        <div class="sidebar__label-wrapper">
+                                            <input
+                                                type="checkbox"
+                                                name=""
+                                                id="electronics"
+                                                class="sidebar__input"
+                                            />
+                                            Electronics
+                                        </div>
+                                        <img
+                                            src="../assets/img/sidebar/arrow-collapse.svg"
+                                            class="sidebar__icon"
+                                        />
+                                    </label>
+                                    <ul class="sidebar__list-item">
+                                        <li class="sidebar__item">
+                                            <label class="sidebar__label-wrapper">
+                                                <input type="checkbox" class="sidebar__input" />
+                                                Accessories
+                                            </label>
+                                        </li>
+                                        <li class="sidebar__item">
+                                            <label class="sidebar__label-wrapper">
+                                                <input type="checkbox" class="sidebar__input" />
+                                                Camera
+                                            </label>
+                                        </li>
+                                        <li class="sidebar__item">
+                                            <label class="sidebar__label-wrapper">
+                                                <input type="checkbox" class="sidebar__input" />
+                                                Computer
+                                            </label>
+                                        </li>
+                                        <li class="sidebar__item">
+                                            <label class="sidebar__label-wrapper">
+                                                <input type="checkbox" class="sidebar__input" />
+                                                Headphones
+                                            </label>
+                                        </li>
+                                        <li class="sidebar__item">
+                                            <label class="sidebar__label-wrapper">
+                                                <input type="checkbox" class="sidebar__input" />
+                                                Smartphone
+                                            </label>
+                                        </li>
+                                        <li class="sidebar__item">
+                                            <label class="sidebar__label-wrapper">
+                                                <input type="checkbox" class="sidebar__input" />
+                                                TV
+                                            </label>
+                                        </li>
+                                        <li class="sidebar__item">
+                                            <label class="sidebar__label-wrapper">
+                                                <input type="checkbox" class="sidebar__input" />
+                                                Video
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Brand -->
+                        <div class="sidebar__wrapper">
+                            <div class="sidebar__title">
+                                <h3 class="sidebar__title-name">Brand</h3>
+                                <img
+                                    src="../assets/img/sidebar/arrow-collapse.svg"
+                                    class="sidebar__icon"
+                                />
+                            </div>
+                            <div class="sidebar__collapse">
+                                <ul class="sidebar__list-item">
+                                    <li class="sidebar__item">
+                                        <label class="sidebar__label-wrapper">
+                                            <input type="checkbox" class="sidebar__input" />
+                                            Accessories
+                                        </label>
+                                    </li>
+                                    <li class="sidebar__item">
+                                        <label class="sidebar__label-wrapper">
+                                            <input type="checkbox" class="sidebar__input" />
+                                            Camera
+                                        </label>
+                                    </li>
+                                    <li class="sidebar__item">
+                                        <label class="sidebar__label-wrapper">
+                                            <input type="checkbox" class="sidebar__input" />
+                                            Computer
+                                        </label>
+                                    </li>
+                                    <li class="sidebar__item">
+                                        <label class="sidebar__label-wrapper">
+                                            <input type="checkbox" class="sidebar__input" />
+                                            Headphones
+                                        </label>
+                                    </li>
+                                    <li class="sidebar__item">
+                                        <label class="sidebar__label-wrapper">
+                                            <input type="checkbox" class="sidebar__input" />
+                                            Smartphone
+                                        </label>
+                                    </li>
+                                    <li class="sidebar__item">
+                                        <label class="sidebar__label-wrapper">
+                                            <input type="checkbox" class="sidebar__input" />
+                                            TV
+                                        </label>
+                                    </li>
+                                    <li class="sidebar__item">
+                                        <label class="sidebar__label-wrapper">
+                                            <input type="checkbox" class="sidebar__input" />
+                                            Video
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Price -->
+                        <div class="sidebar__wrapper">
+                            <div class="sidebar__title">
+                                <h3 class="sidebar__title-name">Pricing</h3>
+                                <img
+                                    src="../assets/img/sidebar/arrow-collapse.svg"
+                                    class="sidebar__icon"
+                                />
+                            </div>
+                            <div class="sidebar__pricing">
+                                <div class="sidebar__progess"></div>
+                                <div class="sidebar__baret"></div>
+                                <div class="sidebar__cost">
+                                    <div class="sidebar__cost-start">$149</div>
+                                    <div class="sidebar__cost-end">$2,999</div>
+                                </div>
+                            </div>
+                            <div class="sidebar__info">
+                                <div class="sidebar__info-cost">PRICE: $99 - $1999</div>
+                                <button class="sidebar__btn-filter">Filter</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Products -->
+                <div class="col" style="--col-lg: 9">
+                    <div class="products">
+                        <div class="products__header">
+                            <div class="products__title">Devices</div>
+                            <div class="products__select products__select--down">
+                                <select name="" id="">
+                                    <option value="0">Shorting By</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <!--products-list -->
+                        <div class="products__list">
+                            <!-- row -->
+                            <div class="products__row row">
+                                <!-- col -->
+                                <div class="products__col col" style="--col-lg: 4">
+                                    <a href="./pages-detail.html" class="products__item t-center">
+                                        <img
+                                            src="../assets/img/products/s22-128gb.jpg"
+                                            alt="s22-128gb"
+                                            class="products__img"
+                                        />
+                                        <div class="products__name">S22 128GB</div>
+                                        <div class="products__cost">From $299</div>
+                                    </a>
+                                </div>
+                                <!-- col -->
+                                <div class="products__col col" style="--col-lg: 4">
+                                    <a href="" class="products__item t-center">
+                                        <img
+                                            src="../assets/img/products/watch-4.jpg"
+                                            alt="watch-4"
+                                            class="products__img"
+                                        />
+                                        <div class="products__name">Watch 4</div>
+                                        <div class="products__cost">From $399</div>
+                                    </a>
+                                </div>
+                                <!-- col -->
+                                <div class="products__col col" style="--col-lg: 4">
+                                    <a href="" class="products__item t-center">
+                                        <img
+                                            src="../assets/img/products/z-fold-2.jpg"
+                                            alt="z-fold-2"
+                                            class="products__img"
+                                        />
+                                        <div class="products__name">Z Fold 2</div>
+                                        <div class="products__cost">From $499</div>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- row -->
+                            <div class="products__row row">
+                                <!-- col -->
+                                <div class="products__col col" style="--col-lg: 4">
+                                    <a href="" class="products__item t-center">
+                                        <img
+                                            src="../assets/img/products/tab-s7-fe.jpg"
+                                            alt="tab-s7-fe"
+                                            class="products__img"
+                                        />
+                                        <div class="products__name">Tab S7 FE</div>
+                                        <div class="products__cost">From $699</div>
+                                    </a>
+                                </div>
+                                <!-- col -->
+                                <div class="products__col col" style="--col-lg: 4">
+                                    <a href="" class="products__item t-center">
+                                        <img
+                                            src="../assets/img/products/the-freestyle.jpg"
+                                            alt="the-freestyle"
+                                            class="products__img"
+                                        />
+                                        <div class="products__name">The Freesytle</div>
+                                        <div class="products__cost">From $899</div>
+                                    </a>
+                                </div>
+                                <!-- col -->
+                                <div class="products__col col" style="--col-lg: 4">
+                                    <a href="" class="products__item t-center">
+                                        <img
+                                            src="../assets/img/products/neo-qled-8k.jpg"
+                                            alt="neo-qled-8k"
+                                            class="products__img"
+                                        />
+                                        <div class="products__name">Neo QLEK 8K</div>
+                                        <div class="products__cost">From $2999</div>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- row -->
+                            <div class="products__row row">
+                                <!-- col -->
+                                <div class="products__col col" style="--col-lg: 4">
+                                    <a href="" class="products__item t-center">
+                                        <img
+                                            src="../assets/img/products/s22+-256gb.jpg"
+                                            alt="s22+-256gb"
+                                            class="products__img"
+                                        />
+                                        <div class="products__name">S22+ 256GB</div>
+                                        <div class="products__cost">From $799</div>
+                                    </a>
+                                </div>
+                                <!-- col -->
+                                <div class="products__col col" style="--col-lg: 4">
+                                    <a href="" class="products__item t-center">
+                                        <img
+                                            src="../assets/img/products/buds-pro.jpg"
+                                            alt="buds-pro"
+                                            class="products__img"
+                                        />
+                                        <div class="products__name">Buds Pro</div>
+                                        <div class="products__cost">From $149</div>
+                                    </a>
+                                </div>
+                                <!-- col -->
+                                <div class="products__col col" style="--col-lg: 4">
+                                    <a href="" class="products__item t-center">
+                                        <img
+                                            src="../assets/img/products/s22-ultra.jpg"
+                                            alt="s22-ultra"
+                                            class="products__img"
+                                        />
+                                        <div class="products__name">s22 Ultra</div>
+                                        <div class="products__cost">From $999</div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- products pagination -->
+                        <div class="products__pagination">
+                            <div class="products__pagination-list">
+                                <!-- icon back -->
+                                <a
+                                    class="products__pagination-icon products__pagination-icon--left btn btn-small"
+                                >
+                                    <img src="../assets/img/products/fi-chevron-right.svg" alt="" />
+                                </a>
+                                <a class="products__pagination-item btn btn-small">1</a>
+                                <a
+                                    class="products__pagination-item products__pagination-item--active btn btn-small"
+                                >
+                                    2
+                                </a>
+                                <a class="products__pagination-item btn btn-small">3</a>
+                                <a class="products__pagination-item btn btn-small">4</a>
+                                <a class="products__pagination-item btn btn-small">...</a>
+
+                                <!-- icon next -->
+                                <a class="products__pagination-icon btn btn-small">
+                                    <img src="../assets/img/products/fi-chevron-right.svg" alt="" />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cta pt-120 pb-100">
+            <div class="container cta__content">
+                <div class="cta__title t-center pt-100">
+                    <h2 class="cta__title-main">
+                        <p>Get help, find answers, download drivers,</p>
+                        <p>manuals and much more</p>
+                    </h2>
+                    <div class="cta__title-sub pt-30">
+                        Contact us online throu1gh chat and get support from an expert
+                    </div>
+                </div>
+                <a class="cta-btn btn">Chat now</a>
+            </div>
+        </div>
+
+        <!-- footer -->
+        <footer class="pt-100">
+            <div class="footer container">
+                <div class="footer__main d-flex pb-100">
+                    <!-- left content -->
+                    <a href="#" class="footer__logo">
+                        <img srcset="../assets/img/Logo-footer.png 2x" alt="logo" />
+                    </a>
+                    <!-- topic -->
+                    <div class="footer__topic">
+                        <h3 class="footer__topic-name pb-20">Company</h3>
+                        <ul class="footer__topic-list">
+                            <li class="footer__topic-item">
+                                <a href="#" class="footer__topic-link">About</a>
+                            </li>
+                            <li class="footer__topic-item">
+                                <a href="#" class="footer__topic-link">Work</a>
+                            </li>
+                            <li class="footer__topic-item">
+                                <a href="#" class="footer__topic-link">Careers</a>
+                            </li>
+                            <li class="footer__topic-item">
+                                <a href="#" class="footer__topic-link">Pricing</a>
+                            </li>
+                            <li class="footer__topic-item">
+                                <a href="#" class="footer__topic-link">Blog</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- topic -->
+                    <div class="footer__topic">
+                        <h3 class="footer__topic-name pb-20">Services</h3>
+                        <ul class="footer__topic-list">
+                            <li class="footer__topic-item">
+                                <a href="#" class="footer__topic-link">Branding</a>
+                            </li>
+                            <li class="footer__topic-item">
+                                <a href="#" class="footer__topic-link">Websites</a>
+                            </li>
+                            <li class="footer__topic-item">
+                                <a href="#" class="footer__topic-link">Development</a>
+                            </li>
+                            <li class="footer__topic-item">
+                                <a href="#" class="footer__topic-link">Strategy</a>
+                            </li>
+                            <li class="footer__topic-item">
+                                <a href="#" class="footer__topic-link">Platforms</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- topic -->
+                    <div class="footer__topic">
+                        <h3 class="footer__topic-name pb-20">Contact</h3>
+                        <ul class="footer__topic-list">
+                            <li class="footer__topic-item">
+                                <a href="#" class="footer__topic-link">Help desk</a>
+                            </li>
+                            <li class="footer__topic-item">
+                                <a href="#" class="footer__topic-link">Docs</a>
+                            </li>
+                            <li class="footer__topic-item">
+                                <a href="#" class="footer__topic-link">Open a ticket</a>
+                            </li>
+                            <li class="footer__topic-item">
+                                <a href="#" class="footer__topic-link">Chat</a>
+                            </li>
+                            <li class="footer__topic-item">
+                                <a href="#" class="footer__topic-link">Forum</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- topic -->
+                    <div class="footer__topic-info">
+                        <h3 class="footer__topic-name pb-20">Newsletter</h3>
+                        <div class="footer__topic-info-content">
+                            <div class="footer__topic-text pb-25">
+                                Subscribe to our newsletter to keep up to date on our marketing,
+                                website, design services, and tips.
+                            </div>
+                            <form action="" class="footer__topic-form align-center">
+                                <input
+                                    type="text"
+                                    class="footer__topic-input mr-5"
+                                    placeholder="Enter email"
+                                    spellcheck="false"
+                                />
+                                <button class="footer__topic-btn btn btn-small">Submit</button>
+                            </form>
+                            <div class="footer__topic-text footer__topic-text--sm pt-15">
+                                We hate spam as much as you do. We will never, ever send you such
+                                emails.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__sub between-center">
+                    <div class="footer__sub-copyright">
+                        © 2022 Pollock LLC. All Rights Reserved. Terms & Conditions. Privacy Policy.
+                    </div>
+                    <ul class="footer__sub-icon-list d-flex">
+                        <li class="footer__sub-icon-item">
+                            <a href="./index.html" class="footer__sub-icon-link">
+                                <img src="../assets/img/footer/fb.svg" alt="fb" />
+                            </a>
+                        </li>
+                        <li class="footer__sub-icon-item">
+                            <a href="#" class="footer__sub-icon-link">
+                                <img src="../assets/img/footer/twitter.svg" alt="twitter" />
+                            </a>
+                        </li>
+                        <li class="footer__sub-icon-item">
+                            <a href="#" class="footer__sub-icon-link">
+                                <img src="../assets/img/footer/in.svg" alt="in" />
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

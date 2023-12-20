@@ -5,16 +5,25 @@
 // @include button('.btn-p18-32', auto, 56px, 18px, 32px, 5px);
 
 .btn {
-    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
     color: #fff;
     font-size: 1.5rem;
     font-weight: 500;
     line-height: 1.6;
     letter-spacing: -0.03rem;
+    border-radius: 5px;
     text-transform: uppercase;
     background-color: $actionBlue;
+    user-select: none;
+    cursor: pointer;
 }
 .btn-small {
     font-size: 1.4rem;
     line-height: 1.71429;
+}
+.btn--disabled {
+    cursor: not-allowed;
 }

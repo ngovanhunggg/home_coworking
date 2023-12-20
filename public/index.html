@@ -4,35 +4,46 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Home</title>
-        <link rel="stylesheet" href="./assets/css/style.css" />
+        <link rel="stylesheet" href="../assets/css/style.css" />
     </head>
     <body>
         <!-- Header -->
         <header>
             <div class="container header between-center">
-                <a href="#" class="header__logo">
-                    <img srcset="./assets/img/Logo.png 2x" alt="logo" />
+                <a href="./index.html" class="header__logo">
+                    <img srcset="../assets/img/Logo.png 2x" alt="logo" />
                 </a>
                 <ul class="header__nav">
                     <li class="header__nav-item">
-                        <a href="#" class="header__nav-link header__nav-link--active"> HOME </a>
+                        <a
+                            href="/public/index.html"
+                            class="header__nav-link header__nav-link--active"
+                        >
+                            HOME
+                        </a>
                     </li>
                     <li class="header__nav-item">
-                        <a href="#" class="header__nav-link">SERVICES</a>
+                        <a href="/public/services.html" class="header__nav-link">SERVICES</a>
                     </li>
-                    <li class="header__nav-item"><a href="#" class="header__nav-link">ABOUT</a></li>
-                    <li class="header__nav-item"><a href="#" class="header__nav-link">AGES</a></li>
-                    <li class="header__nav-item"><a href="#" class="header__nav-link">BLOG</a></li>
                     <li class="header__nav-item">
-                        <a href="#" class="header__nav-link">CONTACT</a>
+                        <a href="/public/about.html" class="header__nav-link">ABOUT</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="/public/pages.html" class="header__nav-link">PAGES</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="/public/blog.html" class="header__nav-link">BLOG</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="/public/contact.html" class="header__nav-link">CONTACT</a>
                     </li>
                 </ul>
                 <div class="header__btn align-center">
                     <button class="header__btn-icon">
-                        <img src="./assets/img/header/Search.png" alt="search" />
+                        <img src="../assets/img/header/Search.png" alt="search" />
                     </button>
                     <button class="header__btn-icon header__btn-icon--active">
-                        <img src="./assets/img/header/Bag-2.png" alt="bag" />
+                        <img src="../assets/img/header/Bag-2.png" alt="bag" />
                     </button>
                     <button class="header__btn-sign-up btn btn-small">SIGN UP</button>
                 </div>
@@ -41,7 +52,7 @@
         <!-- hero -->
         <div class="hero">
             <div class="hero__img">
-                <img srcset="./assets/img/hero/Images.png 2x" alt="hero" />
+                <img srcset="../assets/img/hero/Images.png 2x" alt="hero" />
             </div>
 
             <div class="hero__content container t-center column-center">
@@ -57,7 +68,7 @@
                     <button class="hero__btn-book btn">BOOK NOW</button>
                     <div class="hero__btn-play align-center pl-10">
                         <button class="hero__btn-play-icon">
-                            <img srcset="./assets/img/play.svg 2x" alt="" />
+                            <img srcset="../assets/img/play.svg 2x" alt="" />
                         </button>
                         <div class="hero__btn-play-link">How It Works</div>
                     </div>
@@ -68,7 +79,9 @@
         <div class="services container">
             <div class="services__title t-center">
                 <h2 class="services__title-main">
-                    From a single desk to a whole building. The choice is yours.
+                    From a single desk to a whole building.
+                    <br />
+                    The choice is yours.
                 </h2>
                 <div class="services__title-sub pt-30">
                     We provide office space that’s flexible to your needs and fully customisable.
@@ -80,8 +93,8 @@
                     <!-- item -->
                     <div class="services__card-col col" style="--col-lg: 4">
                         <div class="services__card-item column-center">
-                            <div class="services__card-item-icon center-center">
-                                <img src="./assets/img/services/office.svg" alt="office" />
+                            <div class="services__card-icon center-center">
+                                <img src="../assets/img/services/office.svg" alt="office" />
                             </div>
                             <div class="services__card-title t-center">
                                 <h4 class="services__card-title-main">Private Office</h4>
@@ -94,8 +107,8 @@
                     <!-- item -->
                     <div class="services__card-col col" style="--col-lg: 4">
                         <div class="services__card-item column-center">
-                            <div class="services__card-item-icon center-center">
-                                <img src="./assets/img/services/desk1.svg" alt="desk1" />
+                            <div class="services__card-icon center-center">
+                                <img src="../assets/img/services/desk1.svg" alt="desk1" />
                             </div>
                             <div class="services__card-title t-center">
                                 <h4 class="services__card-title-main">Desk</h4>
@@ -108,8 +121,8 @@
                     <!-- item -->
                     <div class="services__card-col col" style="--col-lg: 4">
                         <div class="services__card-item column-center">
-                            <div class="services__card-item-icon center-center">
-                                <img src="./assets/img/services/desk2.svg" alt="desk2" />
+                            <div class="services__card-icon center-center">
+                                <img src="../assets/img/services/desk2.svg" alt="desk2" />
                             </div>
                             <div class="services__card-title t-center">
                                 <h4 class="services__card-title-main">Hot Desk</h4>
@@ -131,22 +144,22 @@
             <ul class="logos__list pt-80 align-center">
                 <li class="logos__item">
                     <a href="#" class="logos__link">
-                        <img srcset="./assets/img/logos/google.png 2x" alt="google" />
+                        <img srcset="../assets/img/logos/google.png 2x" alt="google" />
                     </a>
                 </li>
                 <li class="logos__item">
                     <a href="#" class="logos__link">
-                        <img srcset="./assets/img/logos/netfix.png 2x" alt="netfix" />
+                        <img srcset="../assets/img/logos/netfix.png 2x" alt="netfix" />
                     </a>
                 </li>
                 <li class="logos__item">
                     <a href="#" class="logos__link">
-                        <img srcset="./assets/img/logos/slack.png 2x" alt="slack" />
+                        <img srcset="../assets/img/logos/slack.png 2x" alt="slack" />
                     </a>
                 </li>
                 <li class="logos__item">
                     <a href="#" class="logos__link">
-                        <img srcset="./assets/img/logos/intercom.png 2x" alt="intercom" />
+                        <img srcset="../assets/img/logos/intercom.png 2x" alt="intercom" />
                     </a>
                 </li>
             </ul>
@@ -160,7 +173,7 @@
                 <div class="items__col col" style="--col-lg: 4">
                     <div class="items__icon items__icon--purple center-center">
                         <img
-                            srcset="./assets/img/items/office-membership.svg 2x"
+                            srcset="../assets/img/items/office-membership.svg 2x"
                             alt="office-membership"
                         />
                     </div>
@@ -174,7 +187,7 @@
                 </div>
                 <div class="items__col col" style="--col-lg: 4">
                     <div class="items__icon items__icon--blue center-center">
-                        <img srcset="./assets/img/items/meeting-room.svg 2x" alt="meeting-room" />
+                        <img srcset="../assets/img/items/meeting-room.svg 2x" alt="meeting-room" />
                     </div>
                     <div class="items__content pl-30">
                         <h4 class="items__content-title">Meeting Rooms</h4>
@@ -191,7 +204,7 @@
         <div class="gallery container d-flex pt-120">
             <div class="gallery__left">
                 <div class="gallery__left-img">
-                    <img srcset="./assets/img/gallery/bg.png 2x" alt="home-work-atplace" />
+                    <img srcset="../assets/img/gallery/bg.png 2x" alt="home-work-atplace" />
                 </div>
                 <div class="gallery__left-content pt-40">
                     <div class="gallery__left-info">
@@ -212,7 +225,7 @@
                 </div>
                 <a href="#" class="gallery__right-link pt-60">
                     View All Buildings
-                    <img src="./assets/img/arrow-right.svg" />
+                    <img src="../assets/img/arrow-right.svg" />
                 </a>
                 <div class="gallery__right-arrows d-flex">
                     <div
@@ -271,12 +284,12 @@
                 </div>
                 <div class="about__img-list">
                     <img
-                        srcset="./assets/img/about/img-2.png 2x"
+                        srcset="../assets/img/about/img-2.png 2x"
                         alt="img-2"
                         class="about__img-item"
                     />
                     <img
-                        srcset="./assets/img/about/img-1.png 2x"
+                        srcset="../assets/img/about/img-1.png 2x"
                         alt="img-1"
                         class="about__img-item"
                     />
@@ -323,11 +336,11 @@
                         </div>
                         <a class="about__box-btn align-center pt-40">
                             Lean more
-                            <img src="./assets/img/about/arrow-right.svg" class="pl-10" />
+                            <img src="../assets/img/about/arrow-right.svg" class="pl-10" />
                         </a>
 
                         <img
-                            src="./assets/img/about/indicator.svg"
+                            src="../assets/img/about/indicator.svg"
                             class="about__box-indicator pt-55"
                         />
                     </div>
@@ -348,7 +361,7 @@
                         <div class="portfolio__item">
                             <div class="portfolio__item-wrraper">
                                 <img
-                                    srcset="./assets/img/portfolio/new-york.png 2x"
+                                    srcset="../assets/img/portfolio/new-york.png 2x"
                                     alt="new-york"
                                     class="portfolio__img"
                                 />
@@ -360,7 +373,7 @@
                         <!-- item -->
                         <div class="portfolio__item">
                             <img
-                                srcset="./assets/img/portfolio/miami.png 2x"
+                                srcset="../assets/img/portfolio/miami.png 2x"
                                 alt="miami"
                                 class="portfolio__img"
                             />
@@ -374,7 +387,7 @@
                         <!-- item -->
                         <div class="portfolio__item">
                             <img
-                                srcset="./assets/img/portfolio/san-francisco.png 2x"
+                                srcset="../assets/img/portfolio/san-francisco.png 2x"
                                 alt="san-francisco"
                                 class="portfolio__img"
                             />
@@ -385,7 +398,7 @@
                         <!-- item -->
                         <div class="portfolio__item">
                             <img
-                                srcset="./assets/img/portfolio/los-angeles.png 2x"
+                                srcset="../assets/img/portfolio/los-angeles.png 2x"
                                 alt="los-angeles"
                                 class="portfolio__img"
                             />
@@ -437,35 +450,50 @@
                                     <!-- items -->
                                     <div class="pricing__tables-check-list pt-40 pl-100">
                                         <div class="pricing__tables-check-item d-flex">
-                                            <img src="./assets/img/pricing/icon-check.svg" alt="" />
+                                            <img
+                                                src="../assets/img/pricing/icon-check.svg"
+                                                alt=""
+                                            />
                                             <div class="pricing__tables-check-text">
                                                 Fully-furnished and serviced
                                             </div>
                                         </div>
 
                                         <div class="pricing__tables-check-item d-flex">
-                                            <img src="./assets/img/pricing/icon-check.svg" alt="" />
+                                            <img
+                                                src="../assets/img/pricing/icon-check.svg"
+                                                alt=""
+                                            />
                                             <div class="pricing__tables-check-text">
                                                 Access break-out areas
                                             </div>
                                         </div>
 
                                         <div class="pricing__tables-check-item d-flex">
-                                            <img src="./assets/img/pricing/icon-check.svg" alt="" />
+                                            <img
+                                                src="../assets/img/pricing/icon-check.svg"
+                                                alt=""
+                                            />
                                             <div class="pricing__tables-check-text">
                                                 Thousands of locations
                                             </div>
                                         </div>
 
                                         <div class="pricing__tables-check-item d-flex">
-                                            <img src="./assets/img/pricing/icon-check.svg" alt="" />
+                                            <img
+                                                src="../assets/img/pricing/icon-check.svg"
+                                                alt=""
+                                            />
                                             <div class="pricing__tables-check-text">
                                                 Global transport hubs
                                             </div>
                                         </div>
 
                                         <div class="pricing__tables-check-item d-flex">
-                                            <img src="./assets/img/pricing/icon-check.svg" alt="" />
+                                            <img
+                                                src="../assets/img/pricing/icon-check.svg"
+                                                alt=""
+                                            />
                                             <div class="pricing__tables-check-text">
                                                 24/7 Support Online
                                             </div>
@@ -494,35 +522,50 @@
                                     <!-- items -->
                                     <div class="pricing__tables-check-list pt-40 pl-100">
                                         <div class="pricing__tables-check-item d-flex">
-                                            <img src="./assets/img/pricing/icon-check.svg" alt="" />
+                                            <img
+                                                src="../assets/img/pricing/icon-check.svg"
+                                                alt=""
+                                            />
                                             <div class="pricing__tables-check-text">
                                                 Fully-furnished and serviced
                                             </div>
                                         </div>
 
                                         <div class="pricing__tables-check-item d-flex">
-                                            <img src="./assets/img/pricing/icon-check.svg" alt="" />
+                                            <img
+                                                src="../assets/img/pricing/icon-check.svg"
+                                                alt=""
+                                            />
                                             <div class="pricing__tables-check-text">
                                                 Access break-out areas
                                             </div>
                                         </div>
 
                                         <div class="pricing__tables-check-item d-flex">
-                                            <img src="./assets/img/pricing/icon-check.svg" alt="" />
+                                            <img
+                                                src="../assets/img/pricing/icon-check.svg"
+                                                alt=""
+                                            />
                                             <div class="pricing__tables-check-text">
                                                 Thousands of locations
                                             </div>
                                         </div>
 
                                         <div class="pricing__tables-check-item d-flex">
-                                            <img src="./assets/img/pricing/icon-check.svg" alt="" />
+                                            <img
+                                                src="../assets/img/pricing/icon-check.svg"
+                                                alt=""
+                                            />
                                             <div class="pricing__tables-check-text">
                                                 Global transport hubs
                                             </div>
                                         </div>
 
                                         <div class="pricing__tables-check-item d-flex">
-                                            <img src="./assets/img/pricing/icon-check.svg" alt="" />
+                                            <img
+                                                src="../assets/img/pricing/icon-check.svg"
+                                                alt=""
+                                            />
                                             <div class="pricing__tables-check-text">
                                                 24/7 Support Online
                                             </div>
@@ -571,13 +614,13 @@
                             <!-- item -->
                             <div class="reviews__cards-user t-center">
                                 <img
-                                    srcset="./assets/img/reviews/monica.png 2x"
+                                    srcset="../assets/img/reviews/monica.png 2x"
                                     class="reviews__cards-item-img"
                                 />
                                 <h4 class="reviews__cards-item-name pt-10">Monica Smith</h4>
                                 <div class="reviews__cards-item-position pt-5">Web designer</div>
                                 <img
-                                    src="./assets/img/reviews/star.svg"
+                                    src="../assets/img/reviews/star.svg"
                                     class="reviews__cards-item-rate pt-20"
                                 />
                                 <div class="reviews__cards-item-text">
@@ -590,13 +633,13 @@
                             <!-- item -->
                             <div class="reviews__cards-user t-center">
                                 <img
-                                    srcset="./assets/img/reviews/vincent.png 2x"
+                                    srcset="../assets/img/reviews/vincent.png 2x"
                                     class="reviews__cards-item-img"
                                 />
                                 <h4 class="reviews__cards-item-name pt-10">Vincent Smith</h4>
                                 <div class="reviews__cards-item-position pt-5">Web designer</div>
                                 <img
-                                    src="./assets/img/reviews/star.svg"
+                                    src="../assets/img/reviews/star.svg"
                                     class="reviews__cards-item-rate pt-20"
                                 />
                                 <div class="reviews__cards-item-text">
@@ -609,13 +652,13 @@
                             <!-- item -->
                             <div class="reviews__cards-user t-center">
                                 <img
-                                    srcset="./assets/img/reviews/stella.png 2x"
+                                    srcset="../assets/img/reviews/stella.png 2x"
                                     class="reviews__cards-item-img"
                                 />
                                 <h4 class="reviews__cards-item-name pt-10">Stella Smith</h4>
                                 <div class="reviews__cards-item-position pt-5">Web designer</div>
                                 <img
-                                    src="./assets/img/reviews/star.svg"
+                                    src="../assets/img/reviews/star.svg"
                                     class="reviews__cards-item-rate pt-20"
                                 />
                                 <div class="reviews__cards-item-text">
@@ -633,8 +676,8 @@
             <div class="footer container">
                 <div class="footer__main d-flex pb-100">
                     <!-- left content -->
-                    <a href="#" class="footer__logo">
-                        <img srcset="./assets/img/Logo-footer.png 2x" alt="logo" />
+                    <a href="./index.html" class="footer__logo">
+                        <img srcset="../assets/img/Logo-footer.png 2x" alt="logo" />
                     </a>
                     <!-- topic -->
                     <div class="footer__topic">
@@ -730,17 +773,17 @@
                     <ul class="footer__sub-icon-list d-flex">
                         <li class="footer__sub-icon-item">
                             <a href="#" class="footer__sub-icon-link">
-                                <img src="./assets/img/footer/fb.svg" alt="fb" />
+                                <img src="../assets/img/footer/fb.svg" alt="fb" />
                             </a>
                         </li>
                         <li class="footer__sub-icon-item">
                             <a href="#" class="footer__sub-icon-link">
-                                <img src="./assets/img/footer/twitter.svg" alt="twitter" />
+                                <img src="../assets/img/footer/twitter.svg" alt="twitter" />
                             </a>
                         </li>
                         <li class="footer__sub-icon-item">
                             <a href="#" class="footer__sub-icon-link">
-                                <img src="./assets/img/footer/in.svg" alt="in" />
+                                <img src="../assets/img/footer/in.svg" alt="in" />
                             </a>
                         </li>
                     </ul>
