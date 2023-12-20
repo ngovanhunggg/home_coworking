@@ -1559,6 +1559,32 @@ header {
   padding-left: 100px;
 }
 
+.product__title-main {
+  color: #2d3958;
+  font-size: 4.2rem;
+  font-weight: 500;
+  line-height: 119.048%; /* 119.048% */
+  letter-spacing: -0.084rem;
+}
+
+.product__title-sub,
+.product__text {
+  color: #7b88a8;
+  font-family: DM Sans;
+  font-weight: 400;
+}
+
+.product__title-sub {
+  font-size: 1.8rem;
+  line-height: 155.556%; /* 155.556% */
+  letter-spacing: -0.03rem;
+}
+
+.product__text {
+  font-size: 1.6rem;
+  line-height: 162.5%; /* 162.5% */
+}
+
 .cta {
   min-height: 500px;
   background: url("../../../assets/img/cta/bg-cta-shop.jpg") no-repeat right bottom;

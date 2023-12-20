@@ -25,14 +25,28 @@
 
 .product__title {
 }
-
 .product__title-main {
+    color: $textHeading;
+    font-size: 4.2rem;
+    font-weight: 500;
+    line-height: 119.048%; /* 119.048% */
+    letter-spacing: -0.084rem;
 }
-
+.product__title-sub,
+.product__text {
+    color: $textText;
+    font-family: DM Sans;
+    font-weight: 400;
+}
 .product__title-sub {
+    font-size: 1.8rem;
+    line-height: 155.556%; /* 155.556% */
+    letter-spacing: -0.03rem;
 }
 
 .product__text {
+    font-size: 1.6rem;
+    line-height: 162.5%; /* 162.5% */
 }
 
 .product__text-more {
