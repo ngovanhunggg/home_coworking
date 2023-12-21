@@ -1,3 +1,4 @@
+@import '../select-option';
 .products__header {
     position: relative;
     display: flex;
@@ -15,41 +16,6 @@
 }
 .products__title {
     flex: 1;
-}
-.products__select {
-    position: absolute;
-    top: -11px;
-    right: 0;
-    &::after {
-        top: 50%;
-        right: 15px;
-        transform: translateY(-50%);
-        position: absolute;
-        width: 14px;
-        height: 14px;
-        content: url('../../../assets/img/products/fi-chevron-right-opacity.svg');
-    }
-}
-.products__select--up {
-    &::after {
-        transform: translateY(-50%) rotate(180deg);
-    }
-}
-.products__select select {
-    min-width: 21rem;
-    min-height: 4.8rem;
-    padding: 11px 60px 11px 8px;
-    color: $textText;
-    font-family: DM Sans;
-    font-size: 1.6rem;
-    font-weight: 400;
-    line-height: 162.5%;
-    border: 1px solid $lineGray-line;
-    border-radius: 5px;
-    appearance: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    cursor: pointer;
 }
 
 // products list

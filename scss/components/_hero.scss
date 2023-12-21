@@ -14,12 +14,10 @@
 }
 
 .hero__content {
+    position: relative;
+    z-index: 1;
     padding-top: 148px;
     margin: 0 auto;
-    // position: absolute;
-    // top: 200px;
-    // left: 575px;
-    // width: calc(770 / 1920 * 100%);
 }
 .hero__text {
     padding: 38px 0 70px;

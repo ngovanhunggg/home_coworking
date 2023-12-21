@@ -1,0 +1,24 @@
+// Abstracts
+@import '../../abstracts/variables';
+// Base
+@import '../../base/reset';
+// Layout
+@import '../../layout/grid.scss';
+// Utils
+@import '../../utils/utils.scss';
+
+// Components
+@import '../../components/typophaphy';
+@import '../../components/button';
+@import '../select-option';
+@import '../tag';
+
+@import '../header-shop'; //import from page_shop
+@import '../page_shop/hero'; //import from page_shop
+@import 'post';
+@import 'related';
+@import 'comments';
+@import 'sidebar-blog';
+@import '../sidebar-blog-footer';
+@import '../cta-blog';
+@import '../footer';

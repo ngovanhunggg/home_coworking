@@ -1379,8 +1379,10 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+  min-width: 14.5rem;
   width: -moz-fit-content;
   width: fit-content;
+  padding: 1.6rem 3.2rem;
   color: #fff;
   font-size: 1.5rem;
   font-weight: 500;
@@ -1395,13 +1397,19 @@ a {
   cursor: pointer;
 }
 
-.btn-small {
+.btn--small {
+  padding: 1.2rem 2.4rem;
+  min-width: 12.9rem;
   font-size: 1.4rem;
   line-height: 1.71429;
 }
 
 .btn--disabled {
   cursor: not-allowed;
+}
+
+.btn--block {
+  width: 100%;
 }
 
 header {
@@ -1480,6 +1488,9 @@ header [class*="--active"]::after {
 .header__btn-icon:has([alt=search]) {
   margin-right: 20px;
 }
+.header__btn-icon:has([alt=bag]) {
+  margin-right: 3rem;
+}
 
 .header__btn-icon--active::after {
   right: 0;
@@ -1493,16 +1504,16 @@ header [class*="--active"]::after {
   margin-left: 30px;
 }
 
-.header {
-  margin-top: unset;
-  padding-top: 16px;
-}
-
 header {
   position: relative;
   min-height: 500px;
   background-color: transparent;
-  background: url("../../../assets/img/bg/bg-gradient.jpg") no-repeat center/cover;
+  background: url("../../assets/img/bg/bg-gradient.jpg") no-repeat center/cover;
+}
+
+.header {
+  margin-top: unset;
+  padding-top: 16px;
 }
 
 .hero {
@@ -1723,6 +1734,42 @@ header {
   padding: 4px;
 }
 
+.select {
+  position: absolute;
+  top: -11px;
+  right: 0;
+}
+.select::after {
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  content: url("../../assets/img/fi-chevron-right-opacity.svg");
+}
+
+.select--up::after {
+  transform: translateY(-50%) rotate(180deg);
+}
+
+.select select {
+  min-width: 21rem;
+  min-height: 4.8rem;
+  padding: 11px 60px 11px 8px;
+  color: #7b88a8;
+  font-family: DM Sans;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 162.5%;
+  border: 1px solid #e7e5ea;
+  border-radius: 5px;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  cursor: pointer;
+}
+
 .products__header {
   position: relative;
   display: flex;
@@ -1741,42 +1788,6 @@ header {
 
 .products__title {
   flex: 1;
-}
-
-.products__select {
-  position: absolute;
-  top: -11px;
-  right: 0;
-}
-.products__select::after {
-  top: 50%;
-  right: 15px;
-  transform: translateY(-50%);
-  position: absolute;
-  width: 14px;
-  height: 14px;
-  content: url("../../../assets/img/products/fi-chevron-right-opacity.svg");
-}
-
-.products__select--up::after {
-  transform: translateY(-50%) rotate(180deg);
-}
-
-.products__select select {
-  min-width: 21rem;
-  min-height: 4.8rem;
-  padding: 11px 60px 11px 8px;
-  color: #7b88a8;
-  font-family: DM Sans;
-  font-size: 1.6rem;
-  font-weight: 400;
-  line-height: 162.5%;
-  border: 1px solid #e7e5ea;
-  border-radius: 5px;
-  appearance: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  cursor: pointer;
 }
 
 .products__row {
@@ -1980,10 +1991,6 @@ footer {
 .footer__topic-input::placeholder {
   color: #7b88a8;
   opacity: 0.7;
-}
-
-.footer__topic-btn {
-  padding: 12px 40px;
 }
 
 .footer__sub {

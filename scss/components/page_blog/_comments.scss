@@ -1,0 +1,130 @@
+.comments {
+    margin-top: 4.8rem;
+    padding: 4.2rem 3rem 5rem 3rem;
+    border: 1px solid $lineHr-line;
+    background: $bgWhite;
+}
+
+.comments__title {
+    padding-bottom: 3rem;
+    border-bottom: 1px solid $lineHr-line;
+    color: $textHeading;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px; /* 155.556% */
+    letter-spacing: 0.4px;
+}
+
+.comments__list {
+}
+
+.comments__item {
+    padding: 20px 0;
+    border-bottom: 1px solid $lineHr-line;
+}
+
+.comments__parent {
+    display: flex;
+    &:not(:first-child) {
+        padding-left: 12.5rem;
+    }
+    &:not(:last-child) {
+        padding-bottom: 3rem;
+    }
+}
+
+.comments__avt {
+    @include circle(8rem);
+    object-fit: cover;
+}
+
+.comments__content {
+    padding-left: 3rem;
+}
+
+.comments__content-top {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 0.7rem;
+}
+
+.comments__name,
+.comments__text {
+    font-family: DM Sans;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 162.5%; /* 162.5% */
+}
+.comments__name {
+    color: $textHeading;
+}
+
+.comments__date,
+.comments__reply {
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 171.429%; /* 171.429% */
+}
+.comments__date {
+    color: $textText;
+    letter-spacing: 0.04rem;
+}
+.comments__text {
+    padding-top: 2.5rem;
+    color: $textText;
+}
+.comments__reply {
+    padding-top: 4rem;
+    padding-left: 1.45rem;
+    span {
+        color: $actionBlue;
+        letter-spacing: -0.03rem;
+        text-transform: uppercase;
+    }
+    &:hover {
+        text-decoration: underline;
+        text-decoration-color: $actionBlue;
+    }
+}
+.comment__reply-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.comments__img {
+    width: 14px;
+    height: 14px;
+}
+
+// write comments
+
+.comments__write {
+    padding-top: 4rem;
+}
+.comments__write-title {
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 155.556%; /* 155.556% */
+    letter-spacing: 0.04rem;
+}
+.comments__form {
+    padding-top: 1.5rem;
+}
+.comments__form-input,
+.comments__form-textarea {
+    width: 100%;
+    padding: 1.1rem 1.6rem;
+    caret-color: red;
+    border: 1px solid $lineGray-line;
+    border-radius: 0.5rem;
+    background: $bgWhite;
+    font-family: DM Sans;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 162.5%;
+}
+.btn--submit-comment {
+    margin-top: 1.5rem;
+    min-width: 14rem;
+}

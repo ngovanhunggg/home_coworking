@@ -1,0 +1,79 @@
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+.sidebar__item {
+    padding: 2rem 3rem 3rem 3rem;
+    background-color: $bgLight;
+    border-radius: 0.5rem;
+}
+
+.sidebar__title {
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 1.55556; /* 155.556% */
+    letter-spacing: 0.04rem;
+    padding-bottom: 3rem;
+}
+.sidebar__form {
+    position: relative;
+}
+.sidebar__input {
+    width: 100%;
+    padding: 1.1rem 3rem 1.1rem 1.8rem;
+    background-color: $bgWhite;
+    border-radius: 0.5rem;
+    border: 1px solid $lineGray-line;
+    font-family: DM Sans;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.625;
+    caret-color: red;
+    &::placeholder {
+        color: $textText;
+    }
+}
+.sidebar__icon {
+    cursor: pointer;
+    width: 1.4rem;
+    height: 1.4rem;
+    position: absolute;
+    right: 1.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.sidebar__new {
+    display: inline-flex;
+
+    &:not(:last-child) {
+        padding-bottom: 4rem;
+    }
+}
+.sidebar__blog-img {
+    width: calc(50 / 205 * 100%);
+    object-fit: contain;
+}
+.sidebar__blog-text {
+    padding-left: 2rem;
+    color: $textText;
+    font-family: DM Sans;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 142.857%;
+    letter-spacing: -0.03rem;
+}
+
+.select--sidebar-blog,
+.select--archive-blog {
+    position: relative;
+    top: 0;
+}
+
+.sidebar__tag {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5rem;
+}

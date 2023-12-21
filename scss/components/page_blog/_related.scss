@@ -1,0 +1,30 @@
+.post__related {
+    margin-top: 50px;
+    padding: 2rem 4.1rem 3.8rem 4rem;
+    background: $bgLight;
+    border-radius: 0.5rem;
+}
+.post__related-title,
+.post__related-name {
+    color: $textHeading;
+    font-size: 1.8rem;
+    line-height: 155.556%;
+}
+.post__related-title {
+    font-weight: 500;
+    letter-spacing: 0.04rem;
+    padding-bottom: 5px;
+}
+
+.post__related-img {
+    width: 100%;
+    border-radius: 0.5rem;
+    object-fit: cover;
+}
+
+.post__related-name {
+    padding-top: 2rem;
+    font-family: DM Sans;
+    font-weight: 400;
+    letter-spacing: -0.03rem;
+}
